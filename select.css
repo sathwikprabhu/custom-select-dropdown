@@ -22,8 +22,7 @@
 }
 
 .custom-select-container:focus > .custom-select-value {
-  border-width: 2px;
-  outline: none;
+  outline: 1px solid black; /* Added outline, because increasing border from 1px to 2px will give a shake because of increasing width and hieght */
 }
 
 .custom-select-value::after {
@@ -40,7 +39,8 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  border: 2px solid black;
+  border: 1px solid black;
+  outline: 1px solid black; /* Just to match the extra 1px width of the select-value on focus*/
   width: 100%;
   border-top: none;
   max-height: 200px;

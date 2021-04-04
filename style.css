@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #2e2e3d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.select_wrapper{
+    margin-top: 10%;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 16px 0px #00000016;
+}
+
+.select_wrapper label{
+    font-weight: 700;
+    margin-right: 1em;
+}
+
+.custom-select-container{
+    outline: none;
+}
+
+.custom-select-value{
+    width: 250px;
+    border: 1px solid #f0f0f0;
+    background: #f0f0f0;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
+}
+
+.custom-select-value::after {
+    border-top-color: 2e2e3d;
+}
+
+.custom-select-container:focus > .custom-select-value {
+    outline: none;
+}
+
+.custom-select-value:hover, .custom-select-value:focus{
+    background: #e7e7e7;
+}
+
+.custom-select-options{
+    background: #ffffff;
+    border: none;
+    outline: none;
+    box-shadow: 0px 5px 16px 0px #00000016;
+    max-height: 300px;
+}
+
+.custom-select-option{
+    padding: 10px 20px;
+}
+
+.custom-select-option:hover{
+    background: #f0f0f0;
+}
+
+.custom-select-option.selected{
+    background: #e7e7e7;
+}
+
+
+
+
+/*Custom Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
